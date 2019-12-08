@@ -21,7 +21,7 @@ end
 
 
 def position_taken?(board, index)
-  position_taken = boolean
+  #position_taken = boolean
 
   if board[index] == " " || board[index] == "" || board[index] == nil
       return position_taken = false
@@ -53,7 +53,7 @@ def turn(board)
         puts 'Try Again!'
         turn(board)
     end
-    display_board(board)
+    #display_board(board)
 end
 
 
@@ -133,7 +133,8 @@ def play(board)
 
   if won?(board) != nil
     puts "Congratulations #{winner(board)}!"
-  elsif draw?(board) == true 
+  elsif draw?(board) == true
     puts "Cat's Game!"
   end
 end
+
